@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Event Registration Form</h1>
+    <form>
+        <section>
+            <h2>Event Information</h2>
+            <label for="eventName">Event Name:</label>
+            <input type="text" id="eventName" name="eventName" required>
+            <label for="eventDate">Event Date:</label>
+            <input type="date" id="eventDate" name="eventDate" required>
+            <label for="eventTime">Event Time:</label>
+            <input type="time" id="eventTime" name="eventTime" required>
+        </section>
+        <section>
+            <h2>Registrant Information</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone:</label>
+            <input type="text" id="phone" name="phone" required>
+        </section>
+        <section>
+            <h2>Registration Details</h2>
+            <label for="numberOfAttendees">Number of Attendees:</label>
+            <input type="number" id="numberOfAttendees" name="numberOfAttendees" required>
+            <label for="registrationType">Registration Type:</label>
+            <select id="registrationType" name="registrationType" required>
+                <option value="">Select Registration Type</option>
+                <option value="individual">Individual</option>
+                <option value="group">Group</option>
+            </select>
+        </section>
+        <button type="submit">Register</button>
+    </form>
+</body>
+</html>
